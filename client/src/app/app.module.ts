@@ -9,6 +9,7 @@ import { WebsitesUnderConstructionComponent } from './websites-under-constructio
 import { OneOnOneServicesComponent } from './one-on-one-services/one-on-one-services.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule,
+    BrowserModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
