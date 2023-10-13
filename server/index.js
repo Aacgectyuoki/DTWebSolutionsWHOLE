@@ -10,8 +10,8 @@ app.use(express.json({ limit: "5mb" }));
 const emailConfig = {
   service: 'Gmail', // Use your email service provider
   auth: {
-    user: 'shahbazkhaniq@gmail.com',
-    pass: 'bqguitpvcwdvebfx',
+    user: 'maxd4637@gmail.com',
+    pass: 'cngiepwjoiwirlku',
   },
 };
 
@@ -29,8 +29,8 @@ app.post("/api/submit-service", (req, res) => {
       .replace("{{ time }}", formData.time);
 
     const mailOptions = {
-      from: 'shahbazkhaniq@gmail.com',
-      to: 'shahbazaliiq@gmail.com',
+      from: 'maxd4637@gmail.com',
+      to: 'maxd4637@gmail.com',
       subject: 'New Service Booking',
       html: emailContent,
     };
