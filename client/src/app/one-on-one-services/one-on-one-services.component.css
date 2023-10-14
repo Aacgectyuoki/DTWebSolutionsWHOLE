@@ -1,0 +1,11 @@
+  /* Define Flow Circular Regular */
+  @font-face {
+    font-family: 'Flow Circular';
+    src: url('/assets/fonts/Flow_Circular/circular-std-medium-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+h2 {
+    font-family: 'Flow Circular', sans-serif; /* Use Flow Circular with a fallback to a generic sans-serif font */
+  }

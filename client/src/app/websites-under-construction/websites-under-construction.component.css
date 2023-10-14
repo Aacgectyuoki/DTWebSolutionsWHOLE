@@ -1,0 +1,37 @@
+/* Define Lato Regular */
+@font-face {
+    font-family: 'Lato';
+    src: url('/assets/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Define Lato Bold */
+  @font-face {
+    font-family: 'Lato';
+    src: url('/assets/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal; /* Bold is a different weight, not a different style */
+  }
+  
+  /* Define Lato Italic */
+  @font-face {
+    font-family: 'Lato';
+    src: url('/assets/fonts/Lato-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  h1 {
+    font-family: 'Flow Circular', sans-serif; /* Use Flow Circular with a fallback to a generic sans-serif font */
+  }
+
+  h5 {
+    font-family: 'Lato', sans-serif; /* Use the Lato font with a fallback to a generic sans-serif font */
+    font-weight: normal; /* Apply bold style to the h1 element */
+  }
+
+  p {
+    font-family: 'Lato', sans-serif; /* Use the Lato font with a fallback to a generic sans-serif font */
+    font-weight: normal; /* Apply bold style to the h1 element */
+  }
