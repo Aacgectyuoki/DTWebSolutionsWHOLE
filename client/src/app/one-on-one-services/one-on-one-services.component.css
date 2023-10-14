@@ -8,4 +8,9 @@
 
 h2 {
     font-family: 'Flow Circular', sans-serif; /* Use Flow Circular with a fallback to a generic sans-serif font */
+    /* color:aliceblue; */
   }
+/* 
+label {
+  color:aliceblue;
+} */

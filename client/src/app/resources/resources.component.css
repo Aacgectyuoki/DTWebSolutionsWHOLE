@@ -9,3 +9,14 @@
   h1 {
     font-family: 'Flow Circular', sans-serif; /* Use Flow Circular with a fallback to a generic sans-serif font */
   }
+
+  .card img {
+    width: 300px;
+    max-width: 100%;
+  }
+
+  .card {
+    margin-left: 6%;
+    margin-right: 40%;
+    max-width: 500px;
+  }
