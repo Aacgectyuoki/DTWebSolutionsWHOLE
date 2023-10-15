@@ -10,7 +10,31 @@
     font-family: 'Flow Circular', sans-serif; /* Use Flow Circular with a fallback to a generic sans-serif font */
   }
 
+  .card {
+    max-width: 400px; 
+    height: 400px;
+  }
+  
+  .card-text {
+    flex-grow: 1;
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
   .card img {
+    width:100%;
+    /* height:30%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* .card img {
     width: 300px;
     max-width: 100%;
   }
@@ -19,4 +43,4 @@
     margin-left: 6%;
     margin-right: 40%;
     max-width: 500px;
-  }
+  } */
