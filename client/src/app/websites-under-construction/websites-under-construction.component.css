@@ -36,3 +36,18 @@
     font-family: 'Lato', sans-serif; /* Use the Lato font with a fallback to a generic sans-serif font */
     font-weight: normal; /* Apply bold style to the h1 element */
   }
+
+  .card {
+    max-width: 400px; 
+    height: 600px;
+  }
+  
+  .card-text {
+    flex-grow: 1;
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
