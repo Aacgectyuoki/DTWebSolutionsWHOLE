@@ -1,52 +1,32 @@
-/* Define Lato Regular */
-@font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.about-card {
+  width: 100%; /* Full width */
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Define Lato Bold */
-@font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal; /* Bold is a different weight, not a different style */
+.about-header {
+  display: flex;
+  align-items: center;
+  background-color: #007bff; /* Background color for the header */
+  color: white;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-/* Define Lato Italic */
-@font-face {
-    font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-  
-/* Define Flow Circular Regular */
-@font-face {
-    font-family: 'Flow Circular';
-    src: url('/assets/fonts/Flow_Circular/circular-std-medium-500.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-h1 {
-  font-family: 'Flow Circular', sans-serif; /* Use Flow Circular with a fallback to a generic sans-serif font */
-  color:aliceblue;
+.about-icon {
+  font-size: 2rem; /* Adjust the icon size as needed */
+  margin-right: 10px;
 }
 
-p {
-    font-family: 'Lato', sans-serif; /* Use the Lato font with a fallback to a generic sans-serif font */
-    font-weight: normal; /* Apply bold style to the h1 element */
-    /* color:aliceblue; */
-  }
+.about-title {
+  font-size: 1.5rem; /* Customize the title font size */
+  font-weight: bold;
+}
 
-  .card {
-    width: 100%;
-    padding: 20px;
-    background-color: #f3f3f3;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
+.about-text {
+  font-size: 1rem; /* Customize the text font size */
+  padding: 20px;
+}

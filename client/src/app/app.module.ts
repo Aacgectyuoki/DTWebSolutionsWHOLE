@@ -10,6 +10,14 @@ import { OneOnOneServicesComponent } from './one-on-one-services/one-on-one-serv
 import { ResourcesComponent } from './resources/resources.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { FooterComponent } from './footer/footer.component';
+import { MatCardModule } from '@angular/material/card';
+
+
 
 @NgModule({
   declarations: [
@@ -19,13 +27,20 @@ import { FormsModule } from '@angular/forms';
     WebsitesUnderConstructionComponent,
     OneOnOneServicesComponent,
     ResourcesComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule, 
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
