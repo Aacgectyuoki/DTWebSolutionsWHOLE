@@ -10,9 +10,23 @@
     font-family: 'Flow Circular', sans-serif; /* Use Flow Circular with a fallback to a generic sans-serif font */
   }
 
+  .row {
+    width: 95%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+
+  .col-sm-4.mb-4 {
+    flex-grow: 1;
+    min-width: 350px; /* minimum width for card before it shrinks */
+  }
+
   .card {
     max-width: 400px; 
-    height: 400px;
+    min-height: 450px;
+    flex-grow: 1;
   }
   
   .card-text {
@@ -33,7 +47,19 @@
     margin-right: auto;
   }
 
+  .card a {
+    width: 100%;
+  }
 
+  .card btn.btn-primary{
+    white-space: nowrap;
+  } 
+
+  @media (max-width: 450px) {
+    .col-sm-4.mb-4 {
+      flex: 1 1 100%; /* Allow only 1 card per row */
+    }
+  }
   /* .card img {
     width: 300px;
     max-width: 100%;
