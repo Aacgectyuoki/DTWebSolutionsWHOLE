@@ -16,6 +16,37 @@
      /* background-color: #013a6f; */
     padding: 0 20px; /* Adjust padding as needed */
   }
+
+  .mat-toolbar .navbar-toggler-icon {
+    color: #fff;
+  }
+
+  /* Change the color of the toggler icon to white in normal state */
+.mat-toolbar .navbar-toggler-icon {
+  color: #fff;
+}
+
+/* Change the color of the toggler icon to white when the menu is open */
+.mat-toolbar.show .navbar-toggler-icon {
+  color: #fff;
+}
+
+  #navbarNav {
+    padding: 0 20px;
+    width: 100%;
+    background-color: #00376d;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* Set your desired background color */
+    border: 1px solid #fff; /* Add a white border to the toggler icon */
+    color: #00376d; /* Set the color of the toggler icon */
+  }
+  
+   .navbar .nav-link {
+   color: #ffffffcc; 
+  }
+  
   
   .logo-container {
     display: flex;
@@ -31,7 +62,7 @@
     color: #fff; /* Text color for the title */
     display: flex; /* Make sure the title is a flex container */
     align-items: center; /* Vertically center the content in both the logo and title */
-    background-color: #00376d; /* Set the background color to match the navbar */
+  /*  background-color: #00376d;  Set the background color to match the navbar */
     padding: 0 10px; /* Add padding to the title for spacing */
     border-radius: 4px; /* Add rounded corners for the title background */
   }
@@ -45,25 +76,9 @@
     border-radius: 50%; /* Create a circular background for the logo */
   }
   
-  .nav-buttons {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-buttons .nav-link {
-    color: #fff; /* Text color for the links */
-    text-transform: uppercase;
-    margin: 0 20px; /* Increase spacing between links */
-    font-weight: 600; /* Make the links bold */
-    transition: color 0.3s; /* Add a smooth color transition on hover */
-  }
-  
-  .nav-buttons .nav-link:hover {
-    color: #0056b3; /* Change text color on hover */
-  }
-  
   /* Add a slight shadow to the navbar */
   .mat-toolbar {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
+  
   
