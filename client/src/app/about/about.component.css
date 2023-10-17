@@ -9,7 +9,7 @@
 .about-header {
   display: flex;
   align-items: center;
-  background-color: #007bff; /* Background color for the header */
+  background-color: #00376d; /* Background color for the header */
   color: white;
   padding: 20px;
   border-top-left-radius: 10px;
@@ -30,3 +30,65 @@
   font-size: 1rem; /* Customize the text font size */
   padding: 20px;
 }
+
+.social-media-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media-list li {
+  margin: 10px 0;
+}
+
+.social-media-list a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000; /* Adjust the color as needed */
+  transition: color 0.3s;
+}
+
+.social-media-list a:hover {
+  color: #00376d; /* Change text color on hover */
+}
+
+.mat-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.about-image {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #00376d; /* Add a border with your desired color */
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.about-image:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+.social-media-container {
+  display: flex;
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #00376d; /* Change this color as needed */
+  margin: 0 10px;
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  transition: color 0.3s;
+}
+
+.social-link i {
+  margin-right: 5px;
+}
+
+.social-link:hover {
+  color: #000; /* Change the color on hover as needed */
+}
+
+

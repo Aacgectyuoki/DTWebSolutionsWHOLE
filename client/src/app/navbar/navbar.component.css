@@ -9,7 +9,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007bff; /* Background color for the navbar */
+    /*background-color: #007bff; /* Background color for the navbar */
+    background-color: #00376d;
+    /* background-color: rgba(59, 130, 246, 0.5); */
+    /* background-color: #003B68; */
+     /* background-color: #013a6f; */
     padding: 0 20px; /* Adjust padding as needed */
   }
   
@@ -27,7 +31,7 @@
     color: #fff; /* Text color for the title */
     display: flex; /* Make sure the title is a flex container */
     align-items: center; /* Vertically center the content in both the logo and title */
-    background-color: #007bff; /* Set the background color to match the navbar */
+    background-color: #00376d; /* Set the background color to match the navbar */
     padding: 0 10px; /* Add padding to the title for spacing */
     border-radius: 4px; /* Add rounded corners for the title background */
   }
@@ -37,7 +41,7 @@
     width: 60px; /* Increase the width of the logo */
     margin: 0; /* Remove any margin on the logo */
     padding: 0; /* Remove any padding on the logo */
-    background-color: #007bff; /* Set the background color to match the navbar */
+    background-color: #00376d; /* Set the background color to match the navbar */
     border-radius: 50%; /* Create a circular background for the logo */
   }
   
