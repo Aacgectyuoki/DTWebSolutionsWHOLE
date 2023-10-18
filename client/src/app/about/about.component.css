@@ -70,7 +70,10 @@
 
 .social-media-container {
   display: flex;
-  align-items: center;
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Horizontally center the items */
+  max-width: 100%;
+  flex-wrap: wrap; /* wrap to fit card */
 }
 
 .social-link {
@@ -81,14 +84,21 @@
   margin: 0 10px;
   font-size: 1.2rem; /* Adjust the font size as needed */
   transition: color 0.3s;
+  max-width: 100%;
+  flex-wrap: wrap; /* wrap to fit card */
 }
 
 .social-link i {
   margin-right: 5px;
+  max-width: 100%;
 }
 
 .social-link:hover {
   color: #000; /* Change the color on hover as needed */
 }
 
-
+@media (max-width: 600px) {
+  .social-link {
+    margin: 10px; /* Adjust the margin for spacing after wrap */
+  }
+}

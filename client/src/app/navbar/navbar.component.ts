@@ -6,14 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  isNavbarOpen: boolean = false; // Property to track the open/closed state of the navbar
-
   constructor() { }
 
   ngOnInit(): void {
   }
+  isNavbarOpen = false; // Set to false to start with the menu closed
 
-  toggleNavbar(): void {
-    this.isNavbarOpen = !this.isNavbarOpen; // Method to toggle the navbar state
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
   }
 }

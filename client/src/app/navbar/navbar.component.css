@@ -103,7 +103,7 @@
 
 /* Style for Navigation Links */
 .nav-link {
-  color: #000000; /* Text color for normal links */
+  color: #fff; /* Text color for normal links */
   font-weight: bold; /* Always bold */
   margin: 0 20px; /* Adjust spacing between links */
   text-transform: uppercase;
@@ -118,4 +118,5 @@
   color: #0056b3; /* Change the color of the active link */
   border-bottom: 2px solid #0056b3; /* Add a bottom border to the active link */
 }
+
 
