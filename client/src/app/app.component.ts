@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'client';
-  isNavbarOpen = true;
+  // isNavbarOpen = true;
 
-  toggleNavbar() {
-    this.isNavbarOpen = !this.isNavbarOpen;
-  }
+  // toggleNavbar() {
+  //   this.isNavbarOpen = !this.isNavbarOpen;
+  // }
 }
