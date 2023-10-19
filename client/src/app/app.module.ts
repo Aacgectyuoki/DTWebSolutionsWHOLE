@@ -20,6 +20,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { FooterComponent } from './footer/footer.component';
 import { MatCardModule } from '@angular/material/card';
+import { JavaBasicsComponent } from './java-tutorials/java-basics/java-basics.component';
+import { OopConceptsComponent } from './java-tutorials/oop-concepts/oop-concepts.component';
+import { JavaCollectionsComponent } from './java-tutorials/java-collections/java-collections.component';
 
 
 
@@ -33,7 +36,10 @@ import { MatCardModule } from '@angular/material/card';
     ResourcesComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    JavaBasicsComponent,
+    OopConceptsComponent,
+    JavaCollectionsComponent
   ],
   imports: [
     AppRoutingModule,
