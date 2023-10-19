@@ -98,3 +98,24 @@
 .router-links a {
   margin: 0 20px;
   font-size: 18px;
+}
+
+/* Style for Navigation Links */
+.nav-link {
+  color: #fff; /* Text color for normal links */
+  font-weight: bold; /* Always bold */
+  margin: 0 20px; /* Adjust spacing between links */
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Change text color on hover */
+}
+
+/* Active Link Styling */
+.nav-link.router-link-active {
+  color: #0056b3; /* Change the color of the active link */
+  border-bottom: 2px solid #0056b3; /* Add a bottom border to the active link */
+}
+
+
