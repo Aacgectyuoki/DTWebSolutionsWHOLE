@@ -78,6 +78,7 @@
     display: none; /* Hide the router links when the screen width is 786px or smaller */
   }
 
+
   .mat-drawer {
     display: block; /* Show the mat-drawer when the screen width is 786px or smaller */
   }
@@ -118,5 +119,49 @@
   color: #0056b3; /* Change the color of the active link */
   border-bottom: 2px solid #0056b3; /* Add a bottom border to the active link */
 }
+
+
+
+
+  .mat-drawer {
+    display: block; /* Show the mat-drawer when the screen width is 786px or smaller */
+  }
+
+  .mat-toolbar {
+    padding: 0 20px; /* Adjust padding as needed for the smaller screen */
+  }
+}
+
+/* Media query for mat-drawer visibility on larger screens */
+@media (min-width: 787px) {
+  .mat-icon {
+    display: none; 
+  }
+}
+/* Hide the menu icon when the screen width is 787px or larger */
+/* Additional styles for the router links, e.g., spacing and font size */
+.router-links a {
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+/* Style for Navigation Links */
+.nav-link {
+  color: #fff; /* Text color for normal links */
+  font-weight: bold; /* Always bold */
+  margin: 0 20px; /* Adjust spacing between links */
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Change text color on hover */
+}
+
+/* Active Link Styling */
+.nav-link.router-link-active {
+  color: #0056b3; /* Change the color of the active link */
+  border-bottom: 2px solid #0056b3; /* Add a bottom border to the active link */
+}
+
 
 
