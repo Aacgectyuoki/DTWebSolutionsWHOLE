@@ -56,20 +56,54 @@ p {
   font-weight: normal; /* Apply bold style to the h1 element */
 }
 
-.card {
-  max-width: 400px; 
-  height: 600px;
-}
-
 .card-text {
   flex-grow: 1;
   text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
   font-size: 14px;
 }
 
+.row {
+  width: 95%; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.col-sm-4.mb-4 {
+  flex-grow: 1;
+  min-width: 350px; /* minimum width for card before it shrinks */
+}
+
+.card {
+  max-width: 400px; 
+  min-height: 600px;
+  flex-grow: 1;
+}
+
 .card-body {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.card-body a {
+  width: 80%;
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the button horizontally */
+  text-align: center; /* Additional centering for text inside the button */
+}
+
+/* .card a {
+  width: 100%;
+} */
+
+@media (max-width: 450px) {
+  .col-sm-4.mb-4 {
+    flex: 1 1 100%; /* Allow only 1 card per row */
+  }
 }
 
 /* @media (max-width: 800px) {

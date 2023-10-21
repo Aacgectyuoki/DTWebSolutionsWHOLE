@@ -14,8 +14,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
 import { FooterComponent } from './footer/footer.component';
 import { MatCardModule } from '@angular/material/card';
+import { JavaBasicsComponent } from './java-tutorials/java-basics/java-basics.component';
+import { OopConceptsComponent } from './java-tutorials/oop-concepts/oop-concepts.component';
+import { JavaCollectionsComponent } from './java-tutorials/java-collections/java-collections.component';
 
 
 
@@ -29,7 +36,10 @@ import { MatCardModule } from '@angular/material/card';
     ResourcesComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    JavaBasicsComponent,
+    OopConceptsComponent,
+    JavaCollectionsComponent
   ],
   imports: [
     AppRoutingModule,
@@ -39,6 +49,10 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatMenuModule,
     MatCardModule
 
   ],
