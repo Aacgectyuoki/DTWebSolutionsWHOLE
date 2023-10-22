@@ -23,6 +23,9 @@ import { MatCardModule } from '@angular/material/card';
 import { JavaBasicsComponent } from './java-tutorials/java-basics/java-basics.component';
 import { OopConceptsComponent } from './java-tutorials/oop-concepts/oop-concepts.component';
 import { JavaCollectionsComponent } from './java-tutorials/java-collections/java-collections.component';
+import { SpringTutorialsComponent } from './spring-tutorials/spring-tutorials.component';
+import { VcTutorialsComponent } from './vc-tutorials/vc-tutorials.component';
+import { PostgresqlTutorialsComponent } from './postgresql-tutorials/postgresql-tutorials.component';
 
 
 
@@ -39,7 +42,10 @@ import { JavaCollectionsComponent } from './java-tutorials/java-collections/java
     FooterComponent,
     JavaBasicsComponent,
     OopConceptsComponent,
-    JavaCollectionsComponent
+    JavaCollectionsComponent,
+    SpringTutorialsComponent,
+    VcTutorialsComponent,
+    PostgresqlTutorialsComponent
   ],
   imports: [
     AppRoutingModule,

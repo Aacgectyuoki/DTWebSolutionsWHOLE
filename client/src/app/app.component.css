@@ -1,5 +1,5 @@
 body {
-    background-image: url('/assets/background.png'); /* Adjust the path to your image file */
+    background-image: url('../assets/background.png'); /* Adjust the path to your image file */
     background-size: cover; /* Optional: Adjust the size of the background */
     background-attachment: fixed; /* Background photo does not move */
   }
@@ -7,7 +7,7 @@ body {
   /* Define Lato Regular */
 @font-face {
     font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -15,7 +15,7 @@ body {
   /* Define Lato Bold */
   @font-face {
     font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal; /* Bold is a different weight, not a different style */
   }
@@ -23,7 +23,7 @@ body {
   /* Define Lato Italic */
   @font-face {
     font-family: 'Lato';
-    src: url('/assets/fonts/Lato-Italic.ttf') format('truetype');
+    src: url('../assets/fonts/Lato/Lato-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
   }
@@ -31,7 +31,7 @@ body {
   /* Define Flow Circular Regular */
   @font-face {
     font-family: 'Flow Circular';
-    src: url('/assets/fonts/Flow_Circular/circular-std-medium-500.ttf') format('truetype');
+    src: url('../assets/fonts/Flow_Circular/circular-std-medium-500.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
