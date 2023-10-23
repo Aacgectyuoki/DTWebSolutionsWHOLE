@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-postgresql-tutorials',
@@ -6,11 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./postgresql-tutorials.component.css']
 })
 export class PostgresqlTutorialsComponent implements OnInit {
+
   images: string[] = [
     './assets/postgresql-tutorials/PostgreSQL_Data_Types_Page1.png',
     './assets/postgresql-tutorials/PostgreSQL_Data_Types_Page2.png',
     // Add more image paths
   ];
+
+  // Handle the right and left arrow key press
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if (event.key === 'ArrowRight') {
+      this.nextImage();
+    } else if (event.key === 'ArrowLeft') {
+      this.prevImage();
+    }
+  }
 
   currentImage: string = this.images[0];
 

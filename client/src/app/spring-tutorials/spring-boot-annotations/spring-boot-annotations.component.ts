@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-spring-boot-annotations',
@@ -8,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class SpringBootAnnotationsComponent implements OnInit {
 
   images: string[] = [
-    './assets/spring-tutorials/Spring_Boot_Annotations_Page1.png',
-    './assets/spring-tutorials/Spring_Boot_Annotations_Page2.png',
+    './assets/spring-tutorials/spring-boot-annotations_png/Spring_Boot_Annotations_Page1.png',
+    './assets/spring-tutorials/spring-boot-annotations_png/Spring_Boot_Annotations_Page2.png',
     // Add more image paths
   ];
+
+  // Handle the right and left arrow key press
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if (event.key === 'ArrowRight') {
+      this.nextImage();
+    } else if (event.key === 'ArrowLeft') {
+      this.prevImage();
+    }
+  }
 
   currentImage: string = this.images[0];
 

@@ -29,8 +29,13 @@ import { SpringBootAnnotationExamplesComponent } from './spring-tutorials/spring
 import { SpringBootAnnotationsComponent } from './spring-tutorials/spring-boot-annotations/spring-boot-annotations.component';
 import { SpringBootApplicationArchitectureComponent } from './spring-tutorials/spring-boot-application-architecture/spring-boot-application-architecture.component';
 import { IntroToJavaComponent } from './java-tutorials/intro-to-java/intro-to-java.component';
-
-
+import { JavascriptBasicsComponent } from './javascript_tutorials/javascript-basics/javascript-basics.component';
+import { NodejsComponent } from './javascript_tutorials/nodejs/nodejs.component';
+import { CicdJenkinsComponent } from './jenkins_tutorials/cicd-jenkins/cicd-jenkins.component';
+import { CommandlineBasicsComponent } from './commandline-tutorials/commandline-basics/commandline-basics.component';
+import { MongoDbBasicsComponent } from './mongodb-tutorials/mongo-db-basics/mongo-db-basics.component';
+import { AngularBasicsComponent } from './angular-tutorials/angular-basics/angular-basics.component';
+import { AwsCategorizedAndDefinedComponent } from './aws-tutorials/aws-categorized-and-defined/aws-categorized-and-defined.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +56,14 @@ import { IntroToJavaComponent } from './java-tutorials/intro-to-java/intro-to-ja
     SpringBootAnnotationExamplesComponent,
     SpringBootAnnotationsComponent,
     SpringBootApplicationArchitectureComponent,
-    IntroToJavaComponent
+    IntroToJavaComponent,
+    JavascriptBasicsComponent,
+    NodejsComponent,
+    CicdJenkinsComponent,
+    CommandlineBasicsComponent,
+    MongoDbBasicsComponent,
+    AngularBasicsComponent,
+    AwsCategorizedAndDefinedComponent
   ],
   imports: [
     AppRoutingModule,
