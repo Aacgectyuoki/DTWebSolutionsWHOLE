@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpringTutorialsComponent } from './spring-tutorials.component';
+import { IntroToJavaComponent } from './intro-to-java.component';
 
-describe('SpringTutorialsComponent', () => {
-  let component: SpringTutorialsComponent;
-  let fixture: ComponentFixture<SpringTutorialsComponent>;
+describe('IntroToJavaComponent', () => {
+  let component: IntroToJavaComponent;
+  let fixture: ComponentFixture<IntroToJavaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SpringTutorialsComponent ]
+      declarations: [ IntroToJavaComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpringTutorialsComponent);
+    fixture = TestBed.createComponent(IntroToJavaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

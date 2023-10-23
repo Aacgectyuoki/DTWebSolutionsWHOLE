@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-postgresql-tutorials',
-  templateUrl: './postgresql-tutorials.component.html',
-  styleUrls: ['./postgresql-tutorials.component.css']
+  selector: 'app-spring-boot-annotations',
+  templateUrl: './spring-boot-annotations.component.html',
+  styleUrls: ['./spring-boot-annotations.component.css']
 })
-export class PostgresqlTutorialsComponent implements OnInit {
+export class SpringBootAnnotationsComponent implements OnInit {
+
   images: string[] = [
-    './assets/postgresql-tutorials/PostgreSQL_Data_Types_Page1.png',
-    './assets/postgresql-tutorials/PostgreSQL_Data_Types_Page2.png',
+    './assets/spring-tutorials/Spring_Boot_Annotations_Page1.png',
+    './assets/spring-tutorials/Spring_Boot_Annotations_Page2.png',
     // Add more image paths
   ];
 
@@ -27,6 +28,7 @@ export class PostgresqlTutorialsComponent implements OnInit {
       this.currentImage = this.images[currentIndex - 1];
     }
   }
+
   constructor() { }
 
   ngOnInit(): void {

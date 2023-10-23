@@ -23,9 +23,12 @@ import { MatCardModule } from '@angular/material/card';
 import { JavaBasicsComponent } from './java-tutorials/java-basics/java-basics.component';
 import { OopConceptsComponent } from './java-tutorials/oop-concepts/oop-concepts.component';
 import { JavaCollectionsComponent } from './java-tutorials/java-collections/java-collections.component';
-import { SpringTutorialsComponent } from './spring-tutorials/spring-tutorials.component';
 import { VcTutorialsComponent } from './vc-tutorials/vc-tutorials.component';
 import { PostgresqlTutorialsComponent } from './postgresql-tutorials/postgresql-tutorials.component';
+import { SpringBootAnnotationExamplesComponent } from './spring-tutorials/spring-boot-annotation-examples/spring-boot-annotation-examples.component';
+import { SpringBootAnnotationsComponent } from './spring-tutorials/spring-boot-annotations/spring-boot-annotations.component';
+import { SpringBootApplicationArchitectureComponent } from './spring-tutorials/spring-boot-application-architecture/spring-boot-application-architecture.component';
+import { IntroToJavaComponent } from './java-tutorials/intro-to-java/intro-to-java.component';
 
 
 
@@ -43,9 +46,12 @@ import { PostgresqlTutorialsComponent } from './postgresql-tutorials/postgresql-
     JavaBasicsComponent,
     OopConceptsComponent,
     JavaCollectionsComponent,
-    SpringTutorialsComponent,
     VcTutorialsComponent,
-    PostgresqlTutorialsComponent
+    PostgresqlTutorialsComponent,
+    SpringBootAnnotationExamplesComponent,
+    SpringBootAnnotationsComponent,
+    SpringBootApplicationArchitectureComponent,
+    IntroToJavaComponent
   ],
   imports: [
     AppRoutingModule,
