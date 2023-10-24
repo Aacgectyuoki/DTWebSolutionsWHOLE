@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="path/to/your/css/style.css"> <!-- Link to your external CSS file here -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.2.1/angular-material.min.css">
+        <title>Core Java Topics</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background-color: #007BFF;
+                color: white;
+                text-align: center;
+                padding: 5px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            .content {
+                padding: 20px;
+                background-color: white;
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+            pre {
+                background-color: #f2f2f2;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            ul {
+                list-style-type: disc;
+                margin-left: 20px;
+            }
+            h2 {
+                font-size: 24px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <h1>Core Java Topics</h1>
+    </header>
+    <div class="content">
+        <section>
+            <h2>Introduction to Variables</h2>
+            <p>Variables are used to store data in Java. They must be declared with a data type before use. Here's an example:</p>
+            <pre>
+int myNumber = 42;
+String myText = "Hello, Java!";
+            </pre>
+        </section>
+        <section>
+            <h2>Control Structures</h2>
+            <p>Control structures are used to control the flow of a Java program. The if-else statement is a common example:</p>
+            <pre>
+int x = 10;
+if (x > 5) {
+    System.out.println("x is greater than 5.");
+} else {
+    System.out.println("x is not greater than 5.");
+}
+            </pre>
+        </section>
+        <section>
+            <h2>Loops</h2>
+            <p>Loops allow you to execute a block of code repeatedly. Here's an example using a for loop:</p>
+            <pre>
+for (int i = 1; i <= 5; i++) {
+    System.out.println("Iteration " + i);
+}
+            </pre>
+        </section>
+        <section>
+            <h2>Arrays</h2>
+            <p>Arrays are used to store multiple values in a single variable. Here's an example of declaring and initializing an array:</p>
+            <pre>
+int[] numbers = {1, 2, 3, 4, 5};
+            </pre>
+        </section>
+        <section>
+            <h2>Methods</h2>
+            <p>Methods are functions that perform specific tasks. Here's an example of defining and calling a method:</p>
+            <pre>
+public static int add(int a, int b) {
+    return a + b;
+}
+
+int result = add(3, 4);
+            </pre>
+        </section>
+        <section>
+            <h2>Object-Oriented Programming (OOP)</h2>
+            <p>Java is an object-oriented programming language. It supports the creation and use of objects. Here's an example of a simple Java class:</p>
+            <pre>
+class Person {
+    String name;
+    int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void sayHello() {
+        System.out.println("Hello, my name is " + name);
+    }
+}
+
+// Create an instance of the Person class
+Person person1 = new Person("John", 30);
+person1.sayHello();
+            </pre>
+        </section>
+        <section>
+            <h2>Inheritance</h2>
+            <p>Inheritance is a fundamental concept in OOP. It allows a class to inherit properties and methods from another class. Here's an example:</p>
+            <pre>
+class Animal {
+    void speak() {
+        System.out.println("Animal speaks");
+    }
+}
+
+class Dog extends Animal {
+    void speak() {
+        System.out.println("Dog barks");
+    }
+}
+
+Dog myDog = new Dog();
+myDog.speak(); // Outputs "Dog barks"
+            </pre>
+        </section>
+        <section>
+            <h2>Exception Handling</h2>
+            <p>Java provides a robust exception handling mechanism. Here's an example of handling exceptions:</p>
+            <pre>
+try {
+    int result = 10 / 0; // This will throw an ArithmeticException
+} catch (ArithmeticException e) {
+    System.out.println("An error occurred: " + e.getMessage());
+}
+            </pre>
+        </section>
+        <section>
+            <h2>File I/O</h2>
+            <p>Java supports file input and output operations. Here's an example of reading from a text file:</p>
+            <pre>
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ReadFileExample {
+    public static void main(String[] args) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("example.txt"));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+            reader.close();
+        } catch (IOException e) {
+            System.err.println("An error occurred: " + e.getMessage());
+        }
+    }
+}
+            </pre>
+        </section>
+        <section>
+            <h2>Collections Framework</h2>
+            <p>Java provides a rich set of data structures in its Collections Framework. Here's an example of using an ArrayList:</p>
+            <pre>
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        List<String> fruits = new ArrayList<>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
+        System.out.println("Fruits: " + fruits);
+    }
+}
+            </pre>
+        </section>
+        <section>
+            <h2>Threads and Concurrency</h2>
+            <p>Java allows multithreading for concurrent execution. Here's an example of creating and running multiple threads:</p>
+            <pre>
+class MyThread extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Thread " + getId() + ": " + i);
+        }
+    }
+}
+
+public class MultithreadingExample {
+    public static void main(String[] args) {
+        MyThread thread1 = new MyThread();
+        MyThread thread2 = new MyThread();
+        thread1.start();
+        thread2.start();
+    }
+}
+            </pre>
+        </section>
+        <section>
+            <h2>Serialization</h2>
+            <p>Java allows you to serialize objects for data storage and transmission. Here's an example of object serialization:</p>
+            <pre>
+import java.io.*;
+
+class Person implements Serializable {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+public class SerializationExample {
+    public static void main(String[] args) {
+        try {
+            Person person = new Person("Alice", 25);
+            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("person.ser"));
+            out.writeObject(person);
+            out.close();
+        } catch (IOException e) {
+            System.err.println("An error occurred: " + e.getMessage());
+        }
+    }
+}
+            </pre>
+        </section>
+        <section>
+            <h2>Java Standard Library</h2>
+            <p>Java comes with a vast standard library that simplifies many programming tasks. Here's an example using the `java.util` package:</p>
+            <pre>
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class CollectionsExample {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(3);
+        numbers.add(1);
+        numbers.add(2);
+        Collections.sort(numbers);
+        System.out.println("Sorted numbers: " + numbers);
+    }
+}
+            </pre>
+        </section>
+    </div>
+    <!-- <footer>
+        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+    </footer> -->
+    <app-footer></app-footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.2.1/angular-material.min.js"></script>
+</body>
+</html>

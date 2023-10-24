@@ -1,0 +1,47 @@
+.slideshow-container {
+    position: relative;
+  }
+  
+  .slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    position: relative;
+  }
+  
+  img {
+    max-height: 100vh; /* Set maximum height to the height of the viewport */
+    display: block;
+    max-width: calc(100% - 80px); /* Ensure the image scales proportionally */
+  }
+  
+  .controls {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  
+  .prev, .next {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    width: 40px; /* Adjust the width as needed */
+    text-align: center;
+    font-size: 18px; /* Adjust the font size as needed */
+  }
+  
+  .prev {
+    left: 5px; /* 5px to the left of the image */
+  }
+  
+  .next {
+    right: 5px; /* 5px to the right of the image */
+  }
+  
