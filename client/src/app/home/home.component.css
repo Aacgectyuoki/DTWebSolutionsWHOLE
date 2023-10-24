@@ -1,0 +1,7 @@
+.row {
+    width: 95%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+  }
