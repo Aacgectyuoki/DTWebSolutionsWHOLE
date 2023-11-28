@@ -1,3 +1,5 @@
 [build]
-  functions = "functions"
-  publish = "public"
+  base = "DTWebSolutionsWHOLE"
+  command = "npm run build"  # This command should build both the client and server components
+  publish = "DTWebSolutionsWHOLE/client/dist"  # Publish directory for the client-side app
+  functions = "DTWebSolutionsWHOLE/server/functions"  # Functions directory for server-side functions
