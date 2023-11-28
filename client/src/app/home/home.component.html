@@ -3,12 +3,40 @@
     <!-- Home Page -->
     <router-outlet></router-outlet> <!-- This will load the Home component -->
 
-    <!-- About Section (inside Home) -->
+    <br>
+    <!-- Hero Section (inside Home) -->
+    <!-- Create cartoon version of self -->
+    <!-- Tell people that you are a web developer in short -->
+    <section id="hero" style="width: 95%; margin-left: auto; margin-right: auto;">
+        <section style="text-align: center;">
+            <button (click)="scrollTo('websites-deployed')" class="animated-button">Projects</button>
+            <!-- <button (click)="scrollTo('websites-under-construction')">Go to Under Construction Section</button> -->
+            <button (click)="scrollTo('skills')" class="animated-button">Skills</button>
+            <button (click)="scrollTo('certifications')" class="animated-button">Certifications</button>
+        </section>
+        <app-hero></app-hero>
+    </section>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
 
     <!-- Websites Deployed Section (inside Home) -->
     <section id="websites-deployed" style="width: 95%; margin-left: auto; margin-right: auto;">
+        <section style="text-align: center;">
+            <button (click)="scrollToTop()" class="animated-button">Top of page</button>
+            <!-- <button (click)="scrollTo('websites-deployed')">Projects</button> -->
+            <!-- <button (click)="scrollTo('websites-under-construction')">Go to Under Construction Section</button> -->
+            <button (click)="scrollTo('skills')" class="animated-button">Skills</button>
+            <button (click)="scrollTo('certifications')" class="animated-button">Certifications</button>
+        </section>
         <app-websites-deployed></app-websites-deployed> <!-- Use Angular component selector -->
     </section>
 
@@ -19,4 +47,61 @@
     </section>
 
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Skills Section - Highlight skills (technical skills, soft skills) -->
+    <section id="skills" style="width: 95%; margin-left: auto; margin-right: auto;">
+        <section style="text-align: center;">
+            <button (click)="scrollToTop()" class="animated-button">Top of page</button>
+            <button (click)="scrollTo('websites-deployed')" class="animated-button">Projects</button>
+            <!-- <button (click)="scrollTo('websites-under-construction')">Go to Under Construction Section</button> -->
+            <!-- <button (click)="scrollTo('skills')">Skills</button> -->
+            <button (click)="scrollTo('certifications')" class="animated-button">Certifications</button>
+        </section>
+        <app-skills></app-skills>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Certifications Section -->
+    <section id="certifications" style="width: 95%; margin-left: auto; margin-right: auto;">
+        <section style="text-align: center;">
+            <button (click)="scrollToTop()" class="animated-button">Top of page</button>
+            <button (click)="scrollTo('websites-deployed')" class="animated-button">Projects</button>
+            <!-- <button (click)="scrollTo('websites-under-construction')">Go to Under Construction Section</button> -->
+            <button (click)="scrollTo('skills')" class="animated-button">Skills</button>
+            <!-- <button (click)="scrollTo('certifications')">Certifications</button> -->
+        </section>
+        <app-certifications></app-certifications>
+    </section>
+
+    <br>
+
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" style="width: 95%; margin-left: auto; margin-right: auto;">
+        <section style="text-align: center;">
+            <button (click)="scrollTo('hero')">Hero</button>
+            <button (click)="scrollTo('websites-deployed')">Projects</button> -->
+            <!-- <button (click)="scrollTo('websites-under-construction')">Go to Under Construction Section</button> -->
+            <!-- <button (click)="scrollTo('skills')">Skills</button> -->
+            <!-- <button (click)="scrollTo('certifications')">Certifications</button> -->
+        <!-- </section>
+        <h1 style="font-family: 'Flow Circular', sans-serif; color:aliceblue;">Testimonials</h1>
+        <div class="row">
+            <div class="card">
+                <p>Total Happy Clients: 6</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Me Section -->
+
 </main>

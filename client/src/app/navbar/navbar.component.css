@@ -38,11 +38,11 @@
 
 .logo-container .logo {
   height: 60px; /* Increase the height of the logo */
-  width: 60px; /* Increase the width of the logo */
+/*  width: 60px;  Increase the width of the logo */
   margin: 0; /* Remove any margin on the logo */
   padding: 0; /* Remove any padding on the logo */
   /* background-color: #00376d;  */
-  border-radius: 50%; /* Create a circular background for the logo */
+  /* border-radius: 50%; Create a circular background for the logo */
 }
 
 .nav-buttons {

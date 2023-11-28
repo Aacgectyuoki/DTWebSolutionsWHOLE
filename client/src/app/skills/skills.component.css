@@ -1,0 +1,57 @@
+/* Define Flow Circular Regular */
+@font-face {
+    font-family: 'Flow Circular';
+    src: url('/assets/fonts/Flow_Circular/circular-std-medium-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+  h1 {
+    font-family: 'Flow Circular', sans-serif; /* Use Flow Circular with a fallback to a generic sans-serif font */
+    color:aliceblue;
+    /* text-align: center; */
+  }
+
+  .row {
+    width: 95%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+    background-color: transparent;
+  }
+
+  /* .skill-item {
+    margin-bottom: 20px;
+  } */
+  
+  /* .stars {
+    margin-top: 10px;
+  } */
+  
+  .fa-star {
+    color: #ddd;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  .skill-item {
+    /* display: flex; */
+    display: table-row;
+    align-items: center;
+  }
+
+  .skill-item h3, .skill-item .stars {
+      display: table-cell;
+      padding: 3px;
+  }
+  
+  .stars {
+    display: flex;
+    margin-left: 5px; /* Add 5px space between h3 and stars */
+    align-items: center; /* Align stars vertically in the middle */
+  }

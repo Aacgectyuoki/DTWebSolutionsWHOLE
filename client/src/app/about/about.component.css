@@ -1,5 +1,5 @@
 .about-card {
-  width: 100%; /* Full width */
+  width: 80%; /* Full width */
   max-width: 800px; /* Adjust the max-width as needed */
   margin: 0 auto;
   border-radius: 10px;
@@ -57,11 +57,19 @@
   font-size: 1.5rem;
 }
 
+.mat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-image {
   width: 150px;
   height: 150px;
   border: 5px solid #00376d; /* Add a border with your desired color */
   transition: transform 0.3s; /* Add a smooth transition effect */
+  display: block; /* Ensures the image is a block-level element */
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 .about-image:hover {

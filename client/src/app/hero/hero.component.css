@@ -1,0 +1,58 @@
+.row {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    display: flex;
+    width: 95%; /* 95% of the page width */
+    max-width: 95%; /* 95% maximum width */
+    margin: 10px auto; /* Center the card horizontally */
+    border: 1px solid #ddd;
+    overflow: hidden;
+  }
+  
+  .hero-class {
+    display: flex;
+    width: 100%;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    padding: 20px; /* Adjust the padding to your preference */
+    margin: 0; /* Set margin to zero */
+    justify-content: center; /* This will center the text vertically */
+    width: 100%; /* Adjust the width to make .hero-text wider */
+  }
+
+  .hero-text h1 {
+    font-size: 4em; /* You can adjust the value to your preference */
+    padding-bottom: 10px;
+    color: #3579f5;
+  }
+
+  @media (max-width: 1010px) {
+    /* Adjust styles for smaller screens, for example, stack the items vertically */
+    .hero-class {
+      flex-direction: column;
+    }
+
+    .hero-text h1 {
+      font-size: 3em; /* You can adjust the value to your preference */
+    }
+  
+    .hero-image img {
+      width: 100%;
+    }
+  
+    .hero-text {
+      width: 100%;
+    }
+  }

@@ -2,8 +2,16 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+// declare var process: {
+//   env: {
+//     [key: string]: string | undefined;
+//   };
+// };
+
 export const environment = {
-  production: false
+  production: false,
+  apiBaseUrl: 'http://localhost:4000',
+  // apiBaseUrl: process.env['API_BASE_URL'] || 'http://localhost:4000',
 };
 
 /*

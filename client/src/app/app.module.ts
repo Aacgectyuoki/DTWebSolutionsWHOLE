@@ -36,6 +36,10 @@ import { CommandlineBasicsComponent } from './commandline-tutorials/commandline-
 import { MongoDbBasicsComponent } from './mongodb-tutorials/mongo-db-basics/mongo-db-basics.component';
 import { AngularBasicsComponent } from './angular-tutorials/angular-basics/angular-basics.component';
 import { AwsCategorizedAndDefinedComponent } from './aws-tutorials/aws-categorized-and-defined/aws-categorized-and-defined.component';
+import { SkillsComponent } from './skills/skills.component';
+import { CertificationsComponent } from './certifications/certifications.component';
+import { HeroComponent } from './hero/hero.component';
+import { ApiService } from './services/api.service';
 
 @NgModule({
   declarations: [
@@ -63,7 +67,10 @@ import { AwsCategorizedAndDefinedComponent } from './aws-tutorials/aws-categoriz
     CommandlineBasicsComponent,
     MongoDbBasicsComponent,
     AngularBasicsComponent,
-    AwsCategorizedAndDefinedComponent
+    AwsCategorizedAndDefinedComponent,
+    SkillsComponent,
+    CertificationsComponent,
+    HeroComponent
   ],
   imports: [
     AppRoutingModule,
@@ -80,7 +87,7 @@ import { AwsCategorizedAndDefinedComponent } from './aws-tutorials/aws-categoriz
     MatCardModule
 
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

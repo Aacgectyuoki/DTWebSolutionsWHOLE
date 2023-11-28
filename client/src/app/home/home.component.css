@@ -1,3 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Customize the timing function and duration */
+body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px; /* Adjust as needed to offset fixed headers, etc. */
+  scroll-padding-bottom: 50px; /* Adjust as needed */
+}
+
+/* Optional: Customize the timing function and duration */
+section {
+  scroll-behavior: smooth;
+  scroll-margin-top: 50px; /* Adjust as needed to offset fixed headers, etc. */
+}
+
 .row {
     width: 95%; 
     margin-left: auto; 
@@ -5,3 +22,41 @@
     display: flex; 
     flex-wrap: wrap; 
   }
+
+  .animated-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Make the buttons round */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Add a shadow effect */
+    position: relative;
+    display: inline-block;
+  }
+  
+  .animated-button:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #4CAF50;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .animated-button:hover {
+    color: #4CAF50;
+    background-color: transparent;
+  }
+  
+  .animated-button:hover:after {
+    transform: scale(1.3, 1.5); /* Increase the size of the button */
+    opacity: 0; /* Fade out */
+  }
+  
