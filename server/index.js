@@ -21,6 +21,12 @@ const transporter = nodemailer.createTransport(emailConfig);
 
 const emailTemplate = fs.readFileSync("./functions/emailTemplate.html", "utf-8");
 
+// Set the Content Security Policy header
+app.use((req, res, next) => {
+  res.setHeader('Content-Security-Policy', "default-src 'self'; style-src 'self' https://cdnjs.cloudflare.com");
+  next();
+});
+
 app.post("/api/submit-service", (req, res) => {
   // Your existing code for handling the email submission
 });
