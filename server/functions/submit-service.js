@@ -10,7 +10,7 @@ const emailConfig = {
 };
 
 const transporter = nodemailer.createTransport(emailConfig);
-const emailTemplate = fs.readFileSync("./emailTemplate.html", "utf-8");
+const emailTemplate = fs.readFileSync(__dirname + "/emailTemplate.html", "utf-8");
 
 exports.handler = async (event, context) => {
   try {
