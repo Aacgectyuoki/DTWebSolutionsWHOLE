@@ -1,8 +1,0 @@
-[build]
-  command = "npm run build"
-  functions = "server/functions"
-  publish = "client/dist/client"
-
-[build.environment]
-  EMAIL_USER = "maxd4637@gmail.com"
-  EMAIL_PASSWORD = "jwhv xhue tntp lmor"
