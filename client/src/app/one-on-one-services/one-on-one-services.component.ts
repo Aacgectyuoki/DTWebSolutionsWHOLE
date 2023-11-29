@@ -27,7 +27,7 @@ export class OneOnOneServicesComponent {
     // );
     // Assuming your backend API endpoint is '/api/submit-service'
     // const apiUrl = 'http://localhost:9000/api/submit-service';
-    const apiUrl: string = `${environment.apiBaseUrl}/.netlify/functions/submit-service`;
+    const apiUrl: string = `${environment.apiBaseUrl}/submit-service`;
 
 
     this.http.post(apiUrl, this.service).subscribe(
