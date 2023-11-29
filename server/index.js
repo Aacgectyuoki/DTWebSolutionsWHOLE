@@ -20,7 +20,7 @@ const emailConfig = {
 
 const transporter = nodemailer.createTransport(emailConfig);
 
-const emailTemplate = fs.readFileSync("./functions/emailTemplate.html", "utf-8");
+const emailTemplate = fs.readFileSync("../functions/emailTemplate.html", "utf-8");
 
 // Set the Content Security Policy header
 app.use((req, res, next) => {
