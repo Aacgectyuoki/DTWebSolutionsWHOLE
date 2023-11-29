@@ -1,5 +1,8 @@
 [build]
-  base = "DTWebSolutionsWHOLE"
-  command = "npm run build"  # This command should build both the client and server components
-  publish = "DTWebSolutionsWHOLE/client/dist"  # Publish directory for the client-side app
-  functions = "DTWebSolutionsWHOLE/server/functions"  # Functions directory for server-side functions
+  command = "npm run build"
+  functions = "server/functions"
+  publish = "client/dist/client"
+
+[build.environment]
+  EMAIL_USER = "maxd4637@gmail.com"
+  EMAIL_PASSWORD = "G432abc1x!"
