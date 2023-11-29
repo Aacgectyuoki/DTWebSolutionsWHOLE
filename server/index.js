@@ -62,11 +62,43 @@ app.post("/.netlify/functions/submit-service", (req, res) => {
   }
 });
 
+exports.handler = async (event, context) => {
+  try {
+    const formData = JSON.parse(event.body);
+
+    const emailContent = emailTemplate
+      .replace("{{ serviceType }}", formData.serviceType)
+      .replace("{{ date }}", formData.date)
+      .replace("{{ time }}", formData.time);
+
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
+      // to: formData.email,
+      subject: 'New Service Booking',
+      html: emailContent,
+    };
+
+    await transporter.sendMail(mailOptions);
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: 'Email sent successfully' }),
+    };
+  } catch (error) {
+    console.error('Error sending email:', error);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ message: 'Failed to send email' }),
+    };
+  }
+};
+
 app.get("*", (req, res) => {
   res.send("Not Found");
 });
 
-module.exports.handler = serverless(app);
+// module.exports.handler = serverless(app);
 
 
 // app.listen(9000, () => {
