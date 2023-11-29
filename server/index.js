@@ -31,8 +31,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// app.post("/api/submit-service", (req, res) => {
-app.post("/api/submit-service", (req, res) => {
+app.post("/.netlify/functions/submit-service", (req, res) => {
   try {
     const formData = req.body;
 
