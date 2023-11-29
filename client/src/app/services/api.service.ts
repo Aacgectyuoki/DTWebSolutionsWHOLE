@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ApiService {
   // private apiUrl: string = `${environment.apiBaseUrl}/api/submit-service`;
-  private apiUrl: string = `${environment.apiBaseUrl}/.netlify/functions/submit-service`;
+  private apiUrl: string = `${environment.apiBaseUrl}/submit-service`;
 
   constructor(private http: HttpClient) {}
 
