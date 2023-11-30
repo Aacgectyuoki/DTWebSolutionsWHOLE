@@ -1,46 +1,45 @@
-// const nodemailer = require('nodemailer');
-// const fs = require("fs");
+const nodemailer = require('nodemailer');
+const fs = require("fs");
 
-// const emailConfig = {
-//   service: 'Gmail',
-//   auth: {
-//     user: "maxd4637@gmail.com",
-//     pass: "G432abc1x!"
-//     // user: process.env.EMAIL_USER,
-//     // pass: process.env.EMAIL_PASSWORD
-//   },
-// };
+const emailConfig = {
+  service: 'Gmail', // Use your email service provider
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
+  },
+};
 
-// const transporter = nodemailer.createTransport(emailConfig);
-// const emailTemplate = fs.readFileSync(__dirname + "/emailTemplate.html", "utf-8");
+const transporter = nodemailer.createTransport(emailConfig);
 
-// exports.handler = async (event, context) => {
-//   try {
-//     const formData = JSON.parse(event.body);
+const emailTemplate = fs.readFileSync("./emailTemplate.html", "utf-8");
 
-//     const emailContent = emailTemplate
-//       .replace("{{ serviceType }}", formData.serviceType)
-//       .replace("{{ date }}", formData.date)
-//       .replace("{{ time }}", formData.time);
+exports.handler = async (event, context) => {
+  try {
+    const formData = JSON.parse(event.body);
 
-//     const mailOptions = {
-//       from: 'maxd4637@gmail.com',
-//       to: 'maxd4637@gmail.com',
-//       subject: 'New Service Booking',
-//       html: emailContent,
-//     };
+    const emailContent = emailTemplate
+      .replace("{{ serviceType }}", formData.serviceType)
+      .replace("{{ date }}", formData.date)
+      .replace("{{ time }}", formData.time);
 
-//     await transporter.sendMail(mailOptions);
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
+      subject: 'New Service Booking',
+      html: emailContent,
+    };
 
-//     return {
-//       statusCode: 200,
-//       body: JSON.stringify({ message: 'Email sent successfully' }),
-//     };
-//   } catch (error) {
-//     console.error('Error sending email:', error);
-//     return {
-//       statusCode: 500,
-//       body: JSON.stringify({ message: 'Failed to send email' }),
-//     };
-//   }
-// };
+    await transporter.sendMail(mailOptions);
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: 'Email sent successfully' }),
+    };
+  } catch (error) {
+    console.log('Error sending email:', error);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ message: 'Failed to send email' }),
+    };
+  }
+};
