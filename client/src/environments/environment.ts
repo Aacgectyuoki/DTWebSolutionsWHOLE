@@ -10,8 +10,8 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://localhost:9000/.netlify/functions',
-  // apiBaseUrl: 'http://localhost:9000',
+  // apiBaseUrl: 'http://localhost:9000/.netlify/functions',
+  apiBaseUrl: 'http://localhost:4000',
   // apiBaseUrl: process.env['API_BASE_URL'] || 'http://localhost:4000',
 };
 

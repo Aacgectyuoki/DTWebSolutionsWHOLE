@@ -14,20 +14,9 @@ export class OneOnOneServicesComponent {
   constructor(private http: HttpClient, private apiService: ApiService) {}
 
   bookService() {
-    // this.apiService.submitService(this.service).subscribe(
-    //   (response) => {
-    //     console.log('Form data sent successfully:', response);
-    //     this.clearForm();
-    //     // Optionally, display a success message or navigate to a success page.
-    //   },
-    //   (error) => {
-    //     console.error('Error sending form data:', error);
-    //     // Optionally, display an error message to the user.
-    //   }
-    // );
     // Assuming your backend API endpoint is '/api/submit-service'
-    // const apiUrl = 'http://localhost:9000/api/submit-service';
-    const apiUrl: string = `${environment.apiBaseUrl}/submit-service`;
+    const apiUrl = 'http://localhost:4000/api/submit-service';
+    // const apiUrl: string = `${environment.apiBaseUrl}/submit-service`;
 
 
     this.http.post(apiUrl, this.service).subscribe(
