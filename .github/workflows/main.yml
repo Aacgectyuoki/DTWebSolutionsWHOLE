@@ -3,29 +3,29 @@ name: Angular Deploy to GitHub Pages
 on:
   push:
     branches:
-      - gh-pages  # or main, or any other branch you want to deploy from
+      - netlify  # This should be the branch you push your code changes to
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '20.9.0' # or other version that your project uses
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.9.0' # Use the same Node.js version as your development environment
 
-    - name: Install Dependencies
-      run: npm install
+      - name: Install Dependencies
+        run: npm install
 
-    - name: Build
-      run: ng build --prod --base-href "https://aacgectyuoki.github.io/DTWebSolutionsWHOLE/"
+      - name: Build
+        run: ng build --prod --base-href "https://dtwebsolutions.org/"  # Make sure this matches your GitHub Pages URL or custom domain
 
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        branch: gh-pages  # The branch you want to deploy to
-        folder: dist/client  # The folder the action should deploy.
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # The branch you want to deploy to (this is correct for GitHub Pages)
+          folder: dist/client  # The folder the action should deploy
+          token: ${{ secrets.GITHUB_TOKEN }}  # This token is provided by GitHub for Actions to use
