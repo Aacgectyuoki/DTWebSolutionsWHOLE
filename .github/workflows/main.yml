@@ -1,0 +1,31 @@
+name: Angular Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - gh-pages  # or main, or any other branch you want to deploy from
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20.9.0' # or other version that your project uses
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build
+      run: ng build --prod --base-href "https://aacgectyuoki.github.io/DTWebSolutionsWHOLE/"
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages  # The branch you want to deploy to
+        folder: dist/client  # The folder the action should deploy.
+        token: ${{ secrets.GITHUB_TOKEN }}
