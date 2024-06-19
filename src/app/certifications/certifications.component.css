@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Flow Circular';
+    src: url('/assets/fonts/Flow_Circular/circular-std-medium-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+  h1 {
+    font-family: 'Flow Circular', sans-serif; /* Use Flow Circular with a fallback to a generic sans-serif font */
+    color:aliceblue;
+  }
+
+  .row {
+    width: 95%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+
+  .certificate-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text content */
+  }
+  
