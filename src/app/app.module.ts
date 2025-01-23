@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { WebsitesDeployedComponent } from './websites-deployed/websites-deployed.component';
@@ -40,6 +42,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { HeroComponent } from './hero/hero.component';
 import { ApiService } from './services/api.service';
+import { ReactTutorialsComponent } from './react-tutorials/react-tutorials.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +73,8 @@ import { ApiService } from './services/api.service';
     AwsCategorizedAndDefinedComponent,
     SkillsComponent,
     CertificationsComponent,
-    HeroComponent
+    HeroComponent,
+    ReactTutorialsComponent
   ],
   imports: [
     AppRoutingModule,
@@ -87,7 +91,7 @@ import { ApiService } from './services/api.service';
     MatCardModule
 
   ],
-  providers: [ApiService],
+  providers: [ApiService, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
