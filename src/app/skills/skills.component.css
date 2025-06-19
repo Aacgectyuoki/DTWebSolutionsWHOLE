@@ -55,3 +55,26 @@
     margin-left: 5px; /* Add 5px space between h3 and stars */
     align-items: center; /* Align stars vertically in the middle */
   }
+
+  .skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Add spacing between items */
+    border-bottom: 1px solid #ddd; /* Optional: Add a divider between rows */
+  }
+  
+  .skill-item h3 {
+    flex: 1; /* Allow the skill name to take up equal space */
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .skill-item .stars {
+    flex: 1; /* Allow the stars to take up equal space */
+    text-align: right; /* Align stars to the right */
+  }
+  
+  .stars span {
+    margin-left: 5px; /* Add spacing between stars */
+  }
